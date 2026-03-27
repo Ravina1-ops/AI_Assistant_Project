@@ -29,6 +29,8 @@ text.place(x= 60, y = 300, width = 400, height= 100)
 
 # entry widget
 
+entry = Entry(root, justify = CENTER)
+entry.place(x = 60, y = 450, width= 400, height = 30)
 
 
 
