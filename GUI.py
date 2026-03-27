@@ -6,6 +6,18 @@ root.geometry("550x675")
 root.resizable(False, False )
 root.config(bg= "sky blue")
 
+# ask function 
+def ask ():
+    print("ask")
+
+# send function
+def send():
+    print("send")
+
+# delete function
+def del_txt():
+    print("text Delete")
+
 # frame
 
 frame = LabelFrame(root, padx = 100, pady = 7, borderwidth= 3, relief="ridge")
@@ -32,6 +44,17 @@ text.place(x= 60, y = 300, width = 400, height= 100)
 entry = Entry(root, justify = CENTER)
 entry.place(x = 60, y = 450, width= 400, height = 30)
 
+# Button 1
+Button1 = Button(root, text = "ASK", bg = "Light Green", pady = 16, padx = 40, borderwidth=3, relief="sunken", command=ask)
+Button1.place(x = 70, y = 575)
+
+# Button 2
+Button2 = Button(root, text = "Send", bg = "Light Green", pady = 16, padx = 40, borderwidth=3, relief="sunken", command=send)
+Button2.place(x = 400, y = 575)
+
+# Button 3
+Button3 = Button(root, text = "Delete", bg = "Light Green", pady = 16, padx = 40, borderwidth=3, relief="sunken", command=del_txt)
+Button3.place(x =225 , y = 575)
 
 
 
