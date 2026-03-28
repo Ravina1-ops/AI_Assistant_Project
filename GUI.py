@@ -11,15 +11,28 @@ root.config(bg= "sky blue")
 
 # ask function 
 def ask ():
-    ask_val = Speech_To_text.speech_to_txt()
+    user_val = Speech_To_text.speech_to_txt()
+    bot_val = action.Action(user_val)
+    text.insert(END, 'User-----> ' + user_val+"\n")
+    if bot_val != None:
+        text.insert(END, "Bot <-----"+str(bot_val)+"\n")
+    if bot_val == "Okay ma'am":
+        root.destroy()
 
 # send function
 def send():
-    print("send")
+    send = entry.get()
+    bot = action.Action(send)
+    text.insert(END, 'User-----> ' + send+"\n")
+    if bot != None:
+        text.insert(END, "Bot <-----"+str(bot)+"\n")
+    if bot == "Okay ma'am":
+        root.destroy()
+
 
 # delete function
 def del_txt():
-    print("text Delete")
+    text.delete('1.0',"end")
 
 # frame
 

@@ -18,4 +18,3 @@ def speech_to_txt():
     except sr.RequestError:
         print("API error / No internet") 
 
-speech_to_txt()
