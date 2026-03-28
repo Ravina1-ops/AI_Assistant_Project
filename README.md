@@ -2,6 +2,8 @@
 
 AI Boss is a Python-based desktop virtual assistant featuring a graphical user interface (GUI) built with Tkinter. It uses speech recognition to listen to your commands and text-to-speech to reply back. You can also interact with it using text input!
 
+![Screnshot]({EB720745-3161-47DC-95AB-0D047F687025}.png)
+
 ## ✨ Features
 * **Interactive GUI**: A clean and simple user interface to interact with the assistant.
 * **Voice Command Support**: Uses a microphone to listen to your voice commands.
@@ -25,6 +27,7 @@ AI Boss is a Python-based desktop virtual assistant featuring a graphical user i
 To run this project on your system:
 
 [x]- Make sure you create virtual environemt for installin all libraries easily
+
 [x]-  You just need to run below cmd
 
 pip install -r requirements.txt
