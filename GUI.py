@@ -1,5 +1,8 @@
 from tkinter import*
 from PIL import Image , ImageTk
+import Speech_To_text
+import action
+
 root = Tk()
 root.title("My Assistant")
 root.geometry("550x675")
@@ -8,7 +11,7 @@ root.config(bg= "sky blue")
 
 # ask function 
 def ask ():
-    print("ask")
+    ask_val = Speech_To_text.speech_to_txt()
 
 # send function
 def send():
