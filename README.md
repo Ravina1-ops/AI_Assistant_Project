@@ -24,8 +24,8 @@ AI Boss is a Python-based desktop virtual assistant featuring a graphical user i
 
 To run this project on your system:
 
-[.] Make sure you create virtual environemt for installin all libraries easily
-[.] You just need to run below cmd
+[x]- Make sure you create virtual environemt for installin all libraries easily
+[x]-  You just need to run below cmd
 
 pip install -r requirements.txt
 
