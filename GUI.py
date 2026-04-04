@@ -57,7 +57,7 @@ def upload_image():
     )
 
     if file_path:
-        extracted_text = ocr_tools.extracted_text_from_image(file_path)
+        extracted_text = ocr_tools.extract_text_from_image(file_path)
         text.insert(END, "\n--- Image OCR Text ---\n")
         text.insert(END, extracted_text + "\n")
 
