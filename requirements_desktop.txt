@@ -1,0 +1,11 @@
+SpeechRecognition
+pyttsx3
+pyaudio
+pywin32
+pypiwin32
+comtypes
+pypdf
+pillow
+pytesseract
+opencv-python
+googletrans==4.0.0-rc1
