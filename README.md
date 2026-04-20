@@ -44,7 +44,7 @@ A web-based tool where students can upload study material and extract text easil
 🔗 **Streamlit App:** `https://student-utility-assistant.streamlit.app`
 
 Example:
-https://your-app-name.streamlit.app
+https://student-utility-assistant.streamlit.app
 
 ---
 
