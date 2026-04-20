@@ -32,59 +32,10 @@ To run this project on your system:
 
 pip install -r requirements.txt
 
-🤖 AI Boss – Student Utility Assistant (Desktop + Web)
 
-AI Boss is a Python-based assistant project built in two versions:
 
-✅ Desktop Assistant (Tkinter + Voice Commands)
-✅ Web App (Streamlit + PDF/Image Text Extractor)
 
-This project was created to explore real-world student productivity features like PDF text extraction, OCR, automation, and web deployment.
 
-🚀 Web Version (Streamlit)
-
-A browser-based student utility tool where users can upload study material and extract text instantly.
-
-Features
-📄 Upload PDF → Extract Text
-🖼️ Upload Image → Extract Text (OCR)
-📥 Download extracted text as .txt
-🌐 Works in browser (easy to share)
-Run Web App Locally
-pip install -r requirements.txt
-streamlit run app.py
-🖥️ Desktop Version (Tkinter)
-
-A desktop voice assistant with a GUI that can take voice/text commands and perform basic tasks.
-
-Features
-🎤 Voice commands (Speech Recognition)
-⌨️ Text input support
-🔊 Text-to-speech responses
-🌍 Opens websites like YouTube, Google, Spotify, LinkedIn
-Run Desktop App Locally
-pip install -r requirements_desktop.txt
-python GUI.py
-🌐 Live Demo (Web Version)
-
-🔗 Streamlit App Link: PASTE_YOUR_LINK_HERE
-
-🛠️ Tech Stack
-Python
-Tkinter (Desktop UI)
-Streamlit (Web UI)
-pypdf (PDF extraction)
-pytesseract (OCR)
-Pillow (Image processing)
-📌 Author
-
-Ravina
-GitHub: PASTE_YOUR_GITHUB_LINK_HERE
-LinkedIn: PASTE_YOUR_LINKEDIN_LINK_HERE
-
-⭐ Note
-
-This project is continuously improving. Future updates may include translation, question extraction, and advanced note tools.
 
 # 🤖 AI Boss - Student Utility Assistant (Desktop + Web)
 
@@ -129,7 +80,7 @@ A web-based tool where students can upload study material and extract text easil
 ---
 
 ## 🚀 Live Demo (Web Version)
-🔗 **Streamlit App:** `PASTE_YOUR_STREAMLIT_LINK_HERE`
+🔗 **Streamlit App:** `https://student-utility-assistant.streamlit.app`
 
 Example:
 https://your-app-name.streamlit.app
@@ -139,10 +90,10 @@ https://your-app-name.streamlit.app
 ## 🖼️ Screenshots
 
 ### Desktop Version (Tkinter)
-![Desktop Screenshot](PASTE_YOUR_DESKTOP_SCREENSHOT_PATH_HERE)
+![Desktop Screenshot]({EB720745-3161-47DC-95AB-0D047F687025}.png)
 
 ### Web Version (Streamlit)
-![Web Screenshot](PASTE_YOUR_WEB_SCREENSHOT_PATH_HERE)
+![Web Screenshot]({EA136C93-8265-4819-8CF7-2D2583CA10ED}.png)
 
 ---
 
@@ -182,3 +133,8 @@ AI_Assistant_Project/
 ├── requirements.txt        # Web requirements (Streamlit)
 ├── requirements_desktop.txt# Desktop requirements (Tkinter)
 └── README.md
+
+
+⭐ Note
+
+This project is continuously improving. Future updates may include translation, question extraction, and advanced note tools.
