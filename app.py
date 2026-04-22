@@ -1,4 +1,5 @@
 import streamlit as st
+import translate_tools
 import pdf_tools
 import ocr_tools
 
@@ -8,7 +9,7 @@ st.title("📚 Student Utility Assistant (PDF + OCR Tool)")
 st.write("Upload a PDF or Image to extract text (No AI).")
 
 # Tabs
-tab1, tab2 = st.tabs(["📄 PDF to Text", "🖼️ Image to Text (OCR)"])
+tab1 = st.container()
 
 # ---------------- PDF SECTION ----------------
 with tab1:
@@ -33,27 +34,15 @@ with tab1:
             mime="text/plain"
         )
 
-# ---------------- IMAGE OCR SECTION ----------------
-with tab2:
-    st.header("🖼️ Upload Image and Extract Text (OCR)")
+# ----------------translate----------------
 
-    img_file = st.file_uploader("Upload Image File", type=["png", "jpg", "jpeg"])
+st.subheader("🌍 Translate Extracted Text")
 
-    if img_file is not None:
-        # Save uploaded image temporarily
-        with open("temp_image.png", "wb") as f:
-            f.write(img_file.read())
+lang = st.selectbox("Choose Language", ["Hindi", "English"])
 
-        st.image("temp_image.png", caption="Uploaded Image", width='stretch')
+if st.button("Translate"):
+    target = "hi" if lang == "Hindi" else "en"
+    translated = translate_tools.translate_text(extracted_text, target_lang=target)
+    st.text_area("Translated Output", translated, height=300)
 
-        extracted_text = ocr_tools.extract_text_from_image("temp_image.png")
 
-        st.subheader("✅ OCR Extracted Text")
-        st.text_area("OCR Output", extracted_text, height=300)
-
-        st.download_button(
-            label="⬇️ Download OCR Text",
-            data=extracted_text,
-            file_name="ocr_extracted_text.txt",
-            mime="text/plain"
-        )
